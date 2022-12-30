@@ -1,0 +1,105 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28606.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Metadata", "Metadata", "{3A26DDA8-2697-4D64-962B-DB9E2DC00EF6}"
+	ProjectSection(SolutionItems) = preProject
+		manifest.json = manifest.json
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityStates.Nemgineer", "EntityStates.Nemgineer", "{A455536B-F394-4359-8974-9194D19C6C54}"
+	ProjectSection(SolutionItems) = preProject
+		Block.cs = Block.cs
+		EnergyShield.cs = EnergyShield.cs
+		NemgineerMainState.cs = NemgineerMainState.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NemgineerMod", "NemgineerMod", "{FD4FA3B3-A744-4C90-BDAF-58D5D0553BF0}"
+	ProjectSection(SolutionItems) = preProject
+		LanguageTokens.cs = LanguageTokens.cs
+		Log.cs = Log.cs
+		Nemgineer\NemgineerPlugin.cs = Nemgineer\NemgineerPlugin.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityStates.Nemgineer.Primary", "EntityStates.Nemgineer.Primary", "{C9C873C6-5182-4181-9E36-CFC5AA045DCC}"
+	ProjectSection(SolutionItems) = preProject
+		ShotgunPunch.cs = ShotgunPunch.cs
+		SwingPunch.cs = SwingPunch.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityStates.Nemgineer.Secondary", "EntityStates.Nemgineer.Secondary", "{D9AB324F-8440-4714-B148-D27C382A50F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityStates.Nemgineer.Utility", "EntityStates.Nemgineer.Utility", "{EE715C16-2351-48A5-A53B-DDD7AC4F21DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityStates.Nemgineer.Special", "EntityStates.Nemgineer.Special", "{786AE1BD-99FE-4930-A08A-46DB52646659}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NemgineerMod.SkillStates.BaseStates", "NemgineerMod.SkillStates.BaseStates", "{B5587667-C06B-4510-B575-A6F8882F54FA}"
+	ProjectSection(SolutionItems) = preProject
+		BasedTimedSkillState.cs = BasedTimedSkillState.cs
+		BaseMeleeAttack.cs = BaseMeleeAttack.cs
+		ExampleDelayedSkillState.cs = ExampleDelayedSkillState.cs
+		ExampleTimedSkillState.cs = ExampleTimedSkillState.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NemgineerMod.Modules.Characters", "NemgineerMod.Modules.Characters", "{7CD4969B-0C8A-4261-B650-D129BBC156DE}"
+	ProjectSection(SolutionItems) = preProject
+		BodyInfo.cs = BodyInfo.cs
+		CharacterBase.cs = CharacterBase.cs
+		ItemDisplaysBase.cs = ItemDisplaysBase.cs
+		NemgineerSkillDefs.cs = NemgineerSkillDefs.cs
+		SurvivorBase.cs = SurvivorBase.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NemgineerMod.Modules", "NemgineerMod.Modules", "{706D411D-24A4-4BBF-A3AF-33B6905977D5}"
+	ProjectSection(SolutionItems) = preProject
+		BaseMasteryUnlockable.cs = BaseMasteryUnlockable.cs
+		Buffs.cs = Buffs.cs
+		Config.cs = Config.cs
+		Content.cs = Content.cs
+		ContentPacks.cs = ContentPacks.cs
+		CustomRendererInfo.cs = CustomRendererInfo.cs
+		GenericModdedUnlockable.cs = GenericModdedUnlockable.cs
+		Helpers.cs = Helpers.cs
+		Materials.cs = Materials.cs
+		Prefabs.cs = Prefabs.cs
+		SkillDefInfo.cs = SkillDefInfo.cs
+		Skills.cs = Skills.cs
+		Skins.cs = Skins.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "References", "References", "{B363EA95-674A-4D3C-9E51-3A7ED85DDD03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{3625909A-E54F-4C66-874F-EC7F06ACA5A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NemgineerMod.Content.Nemgineer.Achievements", "NemgineerMod.Content.Nemgineer.Achievements", "{A6FA3398-6764-49ED-95A5-DAEA8AE8DB9B}"
+	ProjectSection(SolutionItems) = preProject
+		NemgineerMasteryAchievement.cs = NemgineerMasteryAchievement.cs
+		NemgineerSurvivorUnlockAchievment.cs = NemgineerSurvivorUnlockAchievment.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NemgineerMod.Content", "NemgineerMod.Content", "{14475912-A72A-4E41-8921-0755F05BD8A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NemgineerMod.Content.NemgineerSurvivor", "NemgineerMod.Content.NemgineerSurvivor", "{209170A7-6362-4D56-B61A-FC4A662E8487}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityStates.Nemgineer.NemgineerMissilePainter", "EntityStates.Nemgineer.NemgineerMissilePainter", "{DBE0F6E7-B459-44BD-90DE-709FD2430691}"
+	ProjectSection(SolutionItems) = preProject
+		BaseNemgineerMissilePainterState.cs = BaseNemgineerMissilePainterState.cs
+		Finish.cs = Finish.cs
+		Fire.cs = Fire.cs
+		Paint.cs = Paint.cs
+		Startup.cs = Startup.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DBE0F6E7-B459-44BD-90DE-709FD2430691} = {A455536B-F394-4359-8974-9194D19C6C54}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25394121-1456-4FD9-A853-060A4DBBB74C}
+	EndGlobalSection
+EndGlobal

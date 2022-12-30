@@ -1,0 +1,10 @@
+﻿{
+	"name": "Nemesis Engineer",
+	"version_number": "0.1.0",
+	"website_url": "",
+	"description": "Adds Nemesis engineer as a survivor, an alternate of Engineer.",
+	"dependencies": [
+		"bbepis-BepInExPack-5.4.9",
+		"RiskofThunder-HookGenPatcher-1.2.1"
+	]
+}
