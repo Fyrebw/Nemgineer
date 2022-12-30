@@ -3,8 +3,8 @@ using BepInEx;
 using BepInEx.Bootstrap;
 using On.RoR2;
 using R2API.Utils;
-using RocketSurvivor.Modules;
-using RocketSurvivor.Modules.Survivors;
+using NemgineerMod.Modules;
+using NemgineerMod.Modules.Characters;
 using RoR2;
 using RoR2.Skills;
 using System.Runtime.CompilerServices;
@@ -29,7 +29,7 @@ namespace Nemgineer
         public const string MODNAME = "Nemgineer";
         public const string MODVERSION = "0.1.0";
         public const string DEVELOPER_PREFIX = "Fyrebw";
-        public static RocketSurvivorPlugin instance;
+        public static NemgineerPlugin instance;
         public static bool infernoPluginLoaded = false;
         public static bool scepterStandaloneLoaded = false;
         public static bool scepterClassicLoaded = false;
@@ -95,7 +95,7 @@ namespace Nemgineer
         {
             if (!NemgineerPlugin.scepterClassicLoaded)
                 return;
-            RocketSurvivorPlugin.SetupScepterClassicInternal(bodyName, scepterSkill, origSkill);
+            NemgineerPlugin.SetupScepterClassicInternal(bodyName, scepterSkill, origSkill);
         }
 
         public static void SetupScepterStandalone(

@@ -1,7 +1,0 @@
-namespace EntityStates.Nemgineer.NemgineerMissilePainter
-{
-  public class BaseNemmgineerMissilePainterState : BaseSkillState
-  {
-    public override InterruptPriority GetMinimumInterruptPriority() => InterruptPriority.Pain;
-  }
-}
