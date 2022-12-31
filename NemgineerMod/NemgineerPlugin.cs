@@ -11,6 +11,7 @@ using System.Runtime.CompilerServices;
 using ThinkInvisible.ClassicItems;
 using TILER2;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace NemgineerPlugin
 {
