@@ -12,7 +12,7 @@ using ThinkInvisible.ClassicItems;
 using TILER2;
 using UnityEngine;
 
-namespace Nemgineer
+namespace NemgineerPlugin
 {
     [BepInDependency]
     [BepInDependency]
@@ -42,12 +42,12 @@ namespace Nemgineer
 
         private void Awake()
         {
-            RocketSurvivorPlugin.instance = this;
-            RocketSurvivorPlugin.infernoPluginLoaded = Chainloader.PluginInfos.ContainsKey("HIFU.Inferno");
-            RocketSurvivorPlugin.scepterStandaloneLoaded = Chainloader.PluginInfos.ContainsKey("com.DestroyedClone.AncientScepter");
-            RocketSurvivorPlugin.scepterClassicLoaded = Chainloader.PluginInfos.ContainsKey("com.ThinkInvisible.ClassicItems");
-            RocketSurvivorPlugin.emoteAPILoaded = Chainloader.PluginInfos.ContainsKey("com.weliveinasociety.CustomEmotesAPI");
-            RocketSurvivorPlugin.riskOfOptionsLoaded = Chainloader.PluginInfos.ContainsKey("com.rune580.riskofoptions");
+            NemgineerPlugin.instance = this;
+            NemgineerPlugin.infernoPluginLoaded = Chainloader.PluginInfos.ContainsKey("HIFU.Inferno");
+            NemgineerPlugin.scepterStandaloneLoaded = Chainloader.PluginInfos.ContainsKey("com.DestroyedClone.AncientScepter");
+            NemgineerPlugin.scepterClassicLoaded = Chainloader.PluginInfos.ContainsKey("com.ThinkInvisible.ClassicItems");
+            NemgineerPlugin.emoteAPILoaded = Chainloader.PluginInfos.ContainsKey("com.weliveinasociety.CustomEmotesAPI");
+            NemgineerPlugin.riskOfOptionsLoaded = Chainloader.PluginInfos.ContainsKey("com.rune580.riskofoptions");
             Log.Init(this.Logger);
             this.ReadConfig();
             DamageTypes.Initialize();

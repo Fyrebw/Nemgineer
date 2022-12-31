@@ -93,6 +93,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityStates.Nemgineer.Nemg
 		EntityStates.Nemgineer\EntityStates.Nemgineer.NemgineerMissilePainter\Startup.cs = EntityStates.Nemgineer\EntityStates.Nemgineer.NemgineerMissilePainter\Startup.cs
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F16FA22B-CF09-4501-9577-392761263459}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
