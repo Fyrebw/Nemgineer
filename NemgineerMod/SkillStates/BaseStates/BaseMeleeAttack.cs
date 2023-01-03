@@ -15,7 +15,7 @@ namespace NemgineerMod.SkillStates.BaseStates
 
         protected DamageType damageType = DamageType.Generic;
         protected float damageCoefficient = 2f;
-        protected float procCoefficient = 1f;
+        protected float procCoefficient = 1.25f;
         protected float pushForce = 300f;
         protected Vector3 bonusForce = Vector3.zero;
         protected float baseDuration = 1f;

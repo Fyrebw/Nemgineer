@@ -93,10 +93,10 @@ namespace NemgineerMod.Modules.Survivors
 
             #region Primary
             //Creates a skilldef for a typical primary 
-            SkillDef primarySkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo(prefix + "_NEMGINEER_BODY_PRIMARY_SPEARPUNCH_NAME",
-                                                                                      prefix + "_NEMGINEER_BODY_PRIMARY_SPEARPUNCH_DESCRIPTION",
+            SkillDef primarySkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo(prefix + "_NEMGINEER_BODY_PRIMARY_PUMMEL_NAME",
+                                                                                      prefix + "_NEMGINEER_BODY_PRIMARY_PUMMEL_DESCRIPTION",
                                                                                       Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texPrimaryIcon"),
-                                                                                      new EntityStates.SerializableEntityStateType(typeof(SkillStates.SlashCombo)),
+                                                                                      new EntityStates.SerializableEntityStateType(typeof(SkillStates.Pummel)),
                                                                                       "Weapon",
                                                                                       true));
 

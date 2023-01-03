@@ -10,7 +10,7 @@ namespace NemgineerMod.Modules
         internal static void RegisterStates()
         {
             Modules.Content.AddEntityState(typeof(BaseMeleeAttack));
-            Modules.Content.AddEntityState(typeof(SlashCombo));
+            Modules.Content.AddEntityState(typeof(Pummel));
 
             Modules.Content.AddEntityState(typeof(Shoot));
 

@@ -85,7 +85,7 @@ namespace NemgineerMod.SkillStates.BaseStates
 
     public class ExampleTimedSkillState : BaseTimedSkillState
     {
-        public static float SkillBaseDuration = 1.5f;
+        public static float SkillBaseDuration = 5f;
         public static float SkillStartTime = 0.2f;
         public static float SkillEndTime =  0.9f;
 
@@ -114,7 +114,7 @@ namespace NemgineerMod.SkillStates.BaseStates
 
     public class ExampleDelayedSkillState : BaseTimedSkillState
     {
-        public static float SkillBaseDuration = 1.5f;
+        public static float SkillBaseDuration = 5f;
         public static float SkillStartTime = 0.2f;
 
         public override void OnEnter()

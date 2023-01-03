@@ -74,7 +74,7 @@ namespace NemgineerMod
             {
                 if (self.HasBuff(Modules.Buffs.armorBuff))
                 {
-                    self.armor += 300f;
+                    self.armor += 30f;
                 }
             }
         }

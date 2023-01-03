@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace NemgineerMod.SkillStates
 {
-    public class SlashCombo : BaseMeleeAttack
+    public class Pummel : BaseMeleeAttack
     {
         public override void OnEnter()
         {
@@ -55,7 +55,7 @@ namespace NemgineerMod.SkillStates
             if (index == 0) index = 1;
             else index = 0;
 
-            this.outer.SetNextState(new SlashCombo
+            this.outer.SetNextState(new Pummel
             {
                 swingIndex = index
             });

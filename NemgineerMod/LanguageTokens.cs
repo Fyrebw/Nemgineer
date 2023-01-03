@@ -13,7 +13,7 @@ namespace NemgineerMod
 
         internal static string languageRoot => System.IO.Path.Combine(LanguageTokens.assemblyDir, "language");
 
-        internal static string assemblyDir => System.IO.Path.GetDirectoryName(RMORPlugin.pluginInfo.Location);
+        internal static string assemblyDir => System.IO.Path.GetDirectoryName(NemgineerPlugin.pluginInfo.Location);
 
         public LanguageTokens() => LanguageTokens.RegisterLanguageTokens();
 

@@ -108,9 +108,9 @@ namespace NemgineerMod.Modules.Characters
     internal class BodyInfo
     {
         #region Character
-        public string bodyName = "";
-        public string bodyNameToken = "";
-        public string subtitleNameToken = "";
+        public string bodyName = "Nemgineer";
+        public string bodyNameToken = "Nemesis Engineer";
+        public string subtitleNameToken = "Fortified Expert";
 
         // body prefab you're cloning for your character- commando is the safest
         public string bodyNameToClone = "Commando";
@@ -128,7 +128,7 @@ namespace NemgineerMod.Modules.Characters
 
         #region Stats
         //main stats
-        public float maxHealth = 400f;
+        public float maxHealth = 200f;
         public float healthRegen = 2f;
         public float armor = 30f;
         public float shield = 0f; // base shield is a thing apparently. neat
@@ -136,7 +136,7 @@ namespace NemgineerMod.Modules.Characters
         public int jumpCount = 1;
 
         //conventional base stats, consistent for all survivors
-        public float damage = 20f;
+        public float damage = 15f;
         public float attackSpeed = 1f;
         public float crit = 1f;
 
@@ -152,12 +152,12 @@ namespace NemgineerMod.Modules.Characters
         /// </summary>
         public bool autoCalculateLevelStats = true;
 
-        public float healthGrowth = 100f * 0.3f;
-        public float regenGrowth = 1f * 0.2f;
+        public float healthGrowth = 200f * 0.3f;
+        public float regenGrowth = 2f * 0.2f;
         public float armorGrowth = 0f;
         public float shieldGrowth = 0f;
 
-        public float damageGrowth = 20f * 0.2f;
+        public float damageGrowth = 15f * 0.2f;
         public float attackSpeedGrowth = 0f;
         public float critGrowth = 0f;
 
