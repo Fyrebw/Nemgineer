@@ -1,37 +1,38 @@
-﻿using RoR2;
-using System.Collections.Generic;
+﻿using static NemgineerMod.NemgineerPlugin;
+using RoR2;
 using UnityEngine;
 
 namespace NemgineerMod.Modules
 {
-    public static class Buffs
+    internal static class Buffs
     {
-        // armor buff gained during roll
-        internal static BuffDef armorBuff;
+        internal static BuffDef BlockBuff;
+        internal static BuffDef energyShieldBuff;
 
         internal static void RegisterBuffs()
         {
-            armorBuff = AddNewBuff("HenryArmorBuff",
-                LegacyResourcesAPI.Load<BuffDef>("BuffDefs/HiddenInvincibility").iconSprite, 
-                Color.white, 
-                false, 
-                false);
+            Buffs.BlockBuff = Buffs.AddNewBuff("Heavyweight", Assets.MainAssetBundle.LoadAsset<Sprite>("texBuffBlock"), NemgineerPlugin.characterColor, false, false);
+            Buffs.energyShieldBuff = Buffs.AddNewBuff("EnergyShield", Assets.MainAssetBundle.LoadAsset<Sprite>("texBuffBlock"), NemgineerPlugin.characterColor, false, false);
+            Sprite buffIcon1 = Assets.LoadBuffSprite("RoR2/Base/Common/bdSlow50.asset");
+            Sprite buffIcon2 = Assets.LoadBuffSprite("RoR2/Base/Common/bdCloak.asset");
         }
 
-        // simple helper method
-        internal static BuffDef AddNewBuff(string buffName, Sprite buffIcon, Color buffColor, bool canStack, bool isDebuff)
+        internal static BuffDef AddNewBuff(
+          string buffName,
+          Sprite buffIcon,
+          Color buffColor,
+          bool canStack,
+          bool isDebuff)
         {
-            BuffDef buffDef = ScriptableObject.CreateInstance<BuffDef>();
-            buffDef.name = buffName;
-            buffDef.buffColor = buffColor;
-            buffDef.canStack = canStack;
-            buffDef.isDebuff = isDebuff;
-            buffDef.eliteDef = null;
-            buffDef.iconSprite = buffIcon;
-
-            Modules.Content.AddBuffDef(buffDef);
-
-            return buffDef;
+            BuffDef instance = ScriptableObject.CreateInstance<BuffDef>();
+            instance.name = buffName;
+            instance.buffColor = buffColor;
+            instance.canStack = canStack;
+            instance.isDebuff = isDebuff;
+            instance.eliteDef = (EliteDef)null;
+            instance.iconSprite = buffIcon;
+            Content.AddBuffDef(instance);
+            return instance;
         }
     }
 }

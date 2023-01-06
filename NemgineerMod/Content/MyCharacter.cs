@@ -12,7 +12,7 @@ namespace NemgineerMod.Modules.Survivors
     {
         //used when building your character using the prefabs you set up in unity
         //don't upload to thunderstore without changing this
-        public override string prefabBodyName => "Henry";
+        public override string prefabBodyName => "Nemgineer";
 
         public const string NEMGINEER_PREFIX = NemgineerPlugin.DEVELOPER_PREFIX + "_NEMGINEER_BODY_";
 
@@ -140,7 +140,7 @@ namespace NemgineerMod.Modules.Survivors
                 skillNameToken = prefix + "_NEMGINEER_BODY_UTILITY_EXPLOSIVEIDEAS_NAME",
                 skillDescriptionToken = prefix + "_NEMGINEER_BODY_UTILITY_EXPLOSIVEIDEAS_DESCRIPTION",
                 skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texUtilityIcon"),
-                activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.Roll)),
+                activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.ExplosiveIdeas)),
                 activationStateMachineName = "Body",
                 baseMaxStock = 2,
                 baseRechargeInterval = 3f,
